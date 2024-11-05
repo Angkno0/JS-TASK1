@@ -107,7 +107,7 @@ console.log(sammeBokstav("otto"));
 // OPPG 5 
 
 function textCheck(search, liste){
-    return liste.includes(search;)
+    return liste.includes(search);
 }
 
 let liste = ["pizza", "taco", "hamburger", "nachos"];
@@ -115,3 +115,127 @@ let finn = "taco";
 
 console.log(textCheck (finn, liste));
 
+// oppg 7
+
+function identiskTekstCS(text, text2){
+
+
+if(text.toLowerCase() === text2.toLowerCase()){
+ return true;
+} else {
+    return false;
+}
+}
+identiskTekst( " is the text"," is not the same");
+identiskTekstCS( " is the text"," is not the same");
+
+
+// oppg 8 
+function checkForTextJavaScript(text){
+console.log(text);
+console.log(text.indexOf("jacascript"));
+if (text.indexOf(javascript) >= 0){
+    return true;
+}else {
+    return false;
+}
+
+
+}
+
+checkForTextJavaScript("dette er en tekst som inneholder ordet JavaScript i texten");
+
+
+// oppg 9
+
+function checkAge(age){
+if(age < 0 ){
+    return "du er ikkje født.";
+}else{
+    if(age <=13)
+        return "barn";{
+    }
+
+    if(age >= 13 && age <= 19){
+        return "tenåring";
+}
+
+if (age >= 20 && age <= 64){
+    return "voksen";
+}else{
+    return "pensjonist";
+}
+
+}
+}
+
+//her er det flere måter å organisere if og else på
+
+console.log(checkAge(13));
+
+
+// oppg 10
+
+function sjekkVocal(char){
+ const charLowerCase = char.toLowerCase();
+ const vocals = "aeiuyæøå";
+//  const v = ["a", "e", "i", "o", "u", "y", "æ", "ø", "å"];
+//  if(v.includes(charLowerCase)){
+ if(vocals.includes(charLowerCase)){
+    return "vokal";
+ }else{
+    return "konsonant";
+ }
+
+}
+
+// oppg 11
+
+function getSeason(month){
+    month = month.toLowerCase();
+
+    switch(month){
+        case "december":
+        case "january":
+        case "february":
+            return "winter";
+        case "march":
+        case "april":
+        case "may":
+            return "vår";
+        case "june":
+        case "july":
+        case "august":
+            return "sommer";
+        case "september":
+        case "october":
+        case "november":
+            return "høst";
+            default:
+                return "Ugylding måned";
+    }
+}
+
+console.log(getSeason("december"));
+
+// oppg 12
+
+
+function hentUtvalg(array, start, end){
+
+    return array.slice(start, end);
+    
+     }
+    
+     const tea = ["Earl Gray", "Lemon", "Sitron", "blackberry", "black tea", "green tea", "herbal tea", "ginger tea", "peppermint", "chamomile"];
+    const utvalg = hentUtvalg(tea, 1, 9);
+    console.log(utvalg);
+
+    let weatherList2 =["rainy", "sunny", "snowy", "windy"];
+
+    function weather(list){
+        console.log(list.slice(1, -1));
+    
+    }
+    weather2(weatherList2);
+    console.log(weatherList2);
